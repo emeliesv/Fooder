@@ -71,12 +71,14 @@ export const Recipes = () => {
             {recipeArray.map((recipe) => {
                 return (
                     <article className={'recipe__card'}>
+                        <a href='/details'>
                         <div className={'recipe__overlay-container'}>
                             <img className={'recipe__img'} src={recipe.image} alt={recipe.title} />
                             <div className={'recipe__overlay'}>
                                 <h2>{recipe.title}</h2>
                             </div>
                         </div>
+                        </a>
                     </article>
                 )
             })}
